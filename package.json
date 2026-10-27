@@ -1,0 +1,65 @@
+{
+  "name": "cloudscape-ag-grid",
+  "version": "0.1.0",
+  "description": "Cloudscape-native integration for AG Grid Community: design-token theming, grid wrapper, and collection filtering without Enterprise.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linull24/cloudscape-ag-grid.git"
+  },
+  "homepage": "https://github.com/linull24/cloudscape-ag-grid#readme",
+  "bugs": {
+    "url": "https://github.com/linull24/cloudscape-ag-grid/issues"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "@cloudscape-design/collection-hooks": ">=1.0.0",
+    "@cloudscape-design/components": ">=3.0.0",
+    "@cloudscape-design/design-tokens": ">=3.0.0",
+    "ag-grid-community": ">=36.0.0",
+    "ag-grid-react": ">=36.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@cloudscape-design/collection-hooks": "1.0.110",
+    "@cloudscape-design/components": "3.0.1404",
+    "@cloudscape-design/design-tokens": "3.0.116",
+    "@types/react": "19.3.0",
+    "ag-grid-community": "36.2.0",
+    "ag-grid-react": "36.2.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "7.0.2"
+  },
+  "keywords": [
+    "cloudscape",
+    "ag-grid",
+    "ag-grid-community",
+    "design-tokens",
+    "react",
+    "property-filter"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
